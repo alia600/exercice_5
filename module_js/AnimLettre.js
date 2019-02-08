@@ -28,6 +28,7 @@ export class AnimLettre {
         this.elmParent.appendChild(elementMot);
         for(let element of this.lesLettres){
             var nouvelleLettre = document.createElement("div");
+            nouvelleLettre.style.animationDelay = '0.5s';
             nouvelleLettre.innerHTML = element;
             elementMot.appendChild(nouvelleLettre);
         }
