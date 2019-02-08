@@ -15,13 +15,14 @@ export class AnimLettre {
 
     constructor(lesLettres, elementParent, fonction) {
         //Récupérer les valeurs passées en paramètre	
-
+        this.lesLettres = lesLettres
         this.elmParent = elementParent
-        this.AnimLettre()
+        this.AnimLettre(this.lesLettres)
         this.fonction = fonction
     }
 
-    AnimLettre(){
+    AnimLettre(lesLettres){
+        console.log(`lesLettres = ${lesLettres}`)
         
     }
 }
