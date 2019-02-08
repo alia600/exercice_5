@@ -23,6 +23,14 @@ export class AnimLettre {
 
     AnimLettre(lesLettres){
         console.log(`lesLettres = ${lesLettres}`)
-        
+        var elementMot = document.createElement('div');
+        elementMot.classList.add('mot');
+        this.elmParent.appendChild(elementMot);
+        for(let element of this.lesLettres){
+            var nouvelleLettre = document.createElement("div");
+            nouvelleLettre.innerHTML = element;
+            elementMot.appendChild(nouvelleLettre);
+        }
     }
+
 }
